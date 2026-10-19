@@ -100,7 +100,7 @@ Para seguir o princípio **DRY (Don't Repeat Yourself)** e evitar a duplicação
 1. Clone o repositório:
 
    ```bash
-   git clone <url-do-repositorio>
+   git clone https://github.com/Vinicius9922/desafio-t-cnico-playwright.git
    cd <pasta-do-repositorio>
    ```
 
