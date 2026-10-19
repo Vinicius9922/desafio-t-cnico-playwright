@@ -1,0 +1,1 @@
+exports;BasePage = class BasePage {
