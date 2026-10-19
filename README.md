@@ -17,7 +17,7 @@ Automação de testes E2E do fluxo de compra do [Sauce Demo](https://www.saucede
 
 ```bash
 # 1. Clone o repositório
-git clone <URL-DO-REPOSITORIO>
+git clone https://github.com/Vinicius9922/desafio-t-cnico-playwright.git
 cd <NOME-DO-REPOSITORIO>
 
 # 2. Instale as dependências
@@ -145,7 +145,6 @@ npx playwright show-report
 |---|---|
 | **Menu lateral (sidebar):** abrir e fechar, All Items, About, Logout, Reset App State e Dynamic Catalog | Os locators já estão mapeados no `BasePage`. Falta criar o spec. Logout: validar o retorno à tela de login. Reset App State: adicionar um produto e validar o carrinho vazio. About: validar o `href` em vez de navegar para o site externo. Dynamic Catalog: explorar o comportamento antes de definir a asserção. |
 | **Links do rodapé (X, Facebook, LinkedIn)** | Validar apenas `href` e `target="_blank"`, sem navegar. Os sites externos têm login wall e bloqueio de bot e gerariam testes instáveis. |
-| **Login com senha incorreta para um usuário válido** | Adicionar o caso com `standard_user` e senha errada, validando a mensagem de erro. Validar também que a URL permanece na tela de login. |
 | **Usuários especiais** (`problem_user`, `performance_glitch_user`, `error_user`, `visual_user`) | Specs separados, já que cada um simula um comportamento defeituoso diferente. O `performance_glitch_user` exige timeouts maiores. |
 | **Checkout: valores de imposto e total** | Hoje o total só é validado quanto ao formato. Validar o imposto e que o total é igual ao subtotal mais o imposto. |
 | **Checkout com múltiplos produtos** | Adicionar 2 ou mais itens, finalizar a compra e validar que o subtotal é a soma dos preços. |
